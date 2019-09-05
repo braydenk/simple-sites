@@ -1,0 +1,38 @@
+html,
+body {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.page-wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 60px 1fr 40px;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas:
+    "header header header"
+    "aside main main"
+    "footer footer footer";
+}
+
+.page-header {
+  grid-area: header;
+  background-color: cornflowerblue;
+}
+
+.page-sidebar {
+  grid-area: aside;
+  background-color: coral;
+}
+
+.page-content {
+  grid-area: main;
+}
+
+.page-footer {
+  grid-area: footer;
+  background-color: cornflowerblue;
+}
