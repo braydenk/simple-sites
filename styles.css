@@ -16,6 +16,19 @@ img {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: #0F52BA;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul>li {
+  list-style: none;
+}
+
 .page-wrapper {
   height: 100%;
   display: grid;
@@ -34,6 +47,10 @@ img {
   align-items: center;
   font-size: 12px;
   padding: 1rem;
+}
+
+.nav-list-item {
+  margin-bottom: 1rem;
 }
 
 .page-sidebar {
