@@ -20,19 +20,27 @@ body {
 
 .page-header {
   grid-area: header;
-  background-color: cornflowerblue;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 1rem;
 }
 
 .page-sidebar {
   grid-area: aside;
-  background-color: coral;
+  border-right: 1px solid gray;
 }
 
 .page-content {
   grid-area: main;
+  padding: 1rem;
 }
 
 .page-footer {
   grid-area: footer;
-  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-size: 12px;
 }
