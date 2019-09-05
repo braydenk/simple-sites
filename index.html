@@ -16,19 +16,24 @@
         <nav class="sidebar-nav">
           <ul class="nav-list">
             <li class="nav-list-item">
-              <a class="nav-link" href="#intro">Intro</a>
+              <a class="nav-link" href="#intro">Introduction</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#text-content-and-semantics" class="nav-link"
+                >Text Content & Semantics</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="#media" class="nav-link">Media</a>
             </li>
             <li class="nav-list-item">
               <a class="nav-link" href="#images">Images</a>
             </li>
             <li class="nav-list-item">
-              <a class="nav-link" href="#audio">Audio</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-link" href="#chart">Chart</a>
-            </li>
-            <li class="nav-list-item">
               <a class="nav-link" href="#forms">Forms</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#table" class="nav-link">Table</a>
             </li>
           </ul>
         </nav>
@@ -47,6 +52,24 @@
             <a href="https://www.w3.org" target="_blank">W3C</a>.
           </p>
         </article>
+        <article id="text-content-and-semantics">
+          <h2>Text Content & Semantics</h2>
+        </article>
+        <article id="media">
+          <h2>Media</h2>
+          <section id="audio">
+            <h3>Audio</h3>
+            <audio id="sound-clip" controls>
+              <source src="#" type="audio/mpeg" />
+            </audio>
+          </section>
+          <section id="video">
+            <h3>Video</h3>
+            <video id="sound-clip" controls>
+              <source src="#" type="audio/mp4" />
+            </video>
+          </section>
+        </article>
         <article id="images">
           <h2>Images</h2>
           <div class="image-container">
@@ -56,20 +79,16 @@
             />
           </div>
         </article>
-        <article id="audio">
-          <h2>audio</h2>
-          <audio id="sound-clip" controls>
-            <source src="#" type="audio/mpeg" />
-          </audio>
-        </article>
-        <article id="charts">
-          <h2>charts</h2>
-        </article>
         <article id="forms">
           <h2>Forms</h2>
           <p>Example of form inputs</p>
           <form class="example-form" method="post">
             <h3>Example Form</h3>
+            <div>
+              <label for="title">Title: </label>
+              <label for="mr"> <input type="radio" name="title" /> MR. </label>
+              <label for="ms"> <input type="radio" name="title" /> MS. </label>
+            </div>
             <label for="name">Name: </label>
             <input
               type="text"
@@ -92,8 +111,18 @@
               min="1"
               max="100"
             />
+            <label for="gender">Gender: </label>
+            <select id="gender">
+              <option value="">Choose an option</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
             <button type="submit">Submit</button>
           </form>
+        </article>
+        <article id="table">
+          <h2>Table</h2>
         </article>
       </main>
       <footer class="page-footer">
