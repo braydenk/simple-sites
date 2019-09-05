@@ -73,6 +73,28 @@ ul>li {
   margin: 0.5rem 1rem;
 }
 
+.example-table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.example-table>tr,
+td,
+th {
+  border: 1px solid black;
+}
+
+.example-table>td,
+th {
+  padding: 1rem;
+}
+
+.example-table>caption {
+  font-weight: 600;
+  padding: .5rem;
+  caption-side: bottom;
+}
 
 .page-footer {
   grid-area: footer;

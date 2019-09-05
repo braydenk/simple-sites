@@ -131,29 +131,29 @@
         </article>
         <article id="table">
           <h2>Table</h2>
-          <table>
+          <table class="example-table">
             <caption>
-              Table caption
+              Example table
             </caption>
             <colgroup>
               <col />
+              <col span="2" class="col-1" />
+              <col span="2" class="col-2" />
             </colgroup>
-            <thead>
-              <tr>
-                <th colspan="2">Table header</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Table body col 1</td>
-              </tr>
-              <tr>
-                <td>Table body col 2</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <th>Table footer</th>
-            </tfoot>
+            <tr>
+              <td></td>
+              <td scope="col">col 1</td>
+              <th scope="col">col 2</th>
+              <th scope="col">col 3</th>
+              <th scope="col">col 4</th>
+            </tr>
+            <tr>
+              <th scope="row">row 1</th>
+              <td>data 1</td>
+              <td>data 2</td>
+              <td>data 3</td>
+              <td>data 4</td>
+            </tr>
           </table>
         </article>
       </main>
