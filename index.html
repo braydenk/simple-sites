@@ -5,161 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Website Example</title>
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-wrapper">
-      <header class="page-header">
-        <h1>Static Website Example</h1>
-      </header>
-      <aside class="page-sidebar">
-        <nav class="sidebar-nav">
-          <ul class="nav-list">
-            <li class="nav-list-item">
-              <a class="nav-link" href="#intro">Introduction</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="#text-content-and-semantics" class="nav-link"
-                >Text Content & Semantics</a
-              >
-            </li>
-            <li class="nav-list-item">
-              <a href="#media" class="nav-link">Media</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-link" href="#images">Images</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-link" href="#forms">Forms</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="#table" class="nav-link">Table</a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-      <main class="page-content">
-        <h1>Practicing web accessiblity & RWD</h1>
-        <article id="intro">
-          <h2>Introduction</h2>
-          <p>
-            A simple static website built with HTML and CSS that displays how to
-            use various HTML elements while following best practices for web
-            accessiblity and responsive web design.
-          </p>
-          <p>
-            For more information on web accessibility, checkout
-            <a href="https://www.w3.org" target="_blank">W3C</a>.
-          </p>
-        </article>
-        <article id="text-content-and-semantics">
-          <h2>Text Content & Semantics</h2>
-        </article>
-        <article id="media">
-          <h2>Media</h2>
-          <section id="audio">
-            <h3>Audio</h3>
-            <audio id="sound-clip" controls>
-              <source src="#" type="audio/mpeg" />
-            </audio>
-          </section>
-          <section id="video">
-            <h3>Video</h3>
-            <video id="sound-clip" controls>
-              <source src="#" type="audio/mp4" />
-            </video>
-          </section>
-        </article>
-        <article id="images">
-          <h2>Images</h2>
-          <div class="image-container">
-            <img
-              src="https://images.unsplash.com/photo-1506506447188-78e2a1051d9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-              alt="Green frog on a leaf"
-            />
-          </div>
-        </article>
-        <article id="forms">
-          <h2>Forms</h2>
-          <p>Example of form inputs</p>
-          <form class="example-form" method="post">
-            <h3>Example Form</h3>
-            <div>
-              <label for="title">Title: </label>
-              <label for="mr"> <input type="radio" name="title" /> MR. </label>
-              <label for="ms"> <input type="radio" name="title" /> MS. </label>
-            </div>
-            <div>
-              <label for="name">Name: </label>
-              <input
-                type="text"
-                name="name"
-                placeholder="Enter your name"
-                required
-              />
-            </div>
-            <div>
-              <label for="mail">E-mail: </label>
-              <input
-                type="email"
-                name="mail"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
-            <div>
-              <label for="age">Age: </label>
-              <input
-                type="number"
-                name="age"
-                placeholder="Enter your age"
-                min="1"
-                max="100"
-              />
-            </div>
-            <div>
-              <label for="gender">Gender: </label>
-              <select id="gender">
-                <option value="">Choose an option</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            <button type="submit">Submit</button>
-          </form>
-        </article>
-        <article id="table">
-          <h2>Table</h2>
-          <table class="example-table">
-            <caption>
-              Example table
-            </caption>
-            <colgroup>
-              <col />
-              <col span="2" class="col-1" />
-              <col span="2" class="col-2" />
-            </colgroup>
-            <tr>
-              <td></td>
-              <td scope="col">col 1</td>
-              <th scope="col">col 2</th>
-              <th scope="col">col 3</th>
-              <th scope="col">col 4</th>
-            </tr>
-            <tr>
-              <th scope="row">row 1</th>
-              <td>data 1</td>
-              <td>data 2</td>
-              <td>data 3</td>
-              <td>data 4</td>
-            </tr>
-          </table>
-        </article>
-      </main>
-      <footer class="page-footer">
-        <p>Example footer</p>
-      </footer>
-    </div>
+    <nav class="main-nav">
+      <header>HTML & CSS Examples</header>
+      <ul>
+        <li class="nav-link"><a href="#introduction">Introduction</a></li>
+        <li class="nav-link">
+          <a href="#simple_site_example">Simple Site Example</a>
+        </li>
+        <li class="nav-link">
+          <a href="#landing_page_example">Landing Page Example</a>
+        </li>
+        <li class="nav-link">
+          <a href="#portfolio_site_example">Portfolio Site Example</a>
+        </li>
+        <li class="nav-link">
+          <a href="#html_form_examples">HTML Form Examples</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main">
+      <section class="main-section">
+        <header id="introduction">Introduction</header>
+        <p>
+          A collection of static website & HTML elements demonstrating how to do
+          various simple tasks with HTML & CSS.
+        </p>
+        <p>
+          Each section on this page describes the site and links to a seperate
+          page to view the implementation.
+        </p>
+      </section>
+      <section class="main-section">
+        <header id="simple_site_example">
+          Simple Site Example
+        </header>
+        <p>Example of a static website</p>
+        <p>Click here to see the implementation.</p>
+      </section>
+      <section class="main-section">
+        <header id="landing_page_example">Landing Page Example</header>
+        <p>Example of a landing page</p>
+        <p>Click here to see the implementation.</p>
+      </section>
+      <section class="main-section">
+        <header id="portfolio_site_example">Portfolio Site Example</header>
+        <p>Example of a portfolio site</p>
+        <p>Click here to see the implementation.</p>
+      </section>
+      <section class="main-section">
+        <header id="html_form_examples">HTML Form Examples</header>
+        <p>Example of different HTML forms</p>
+        <p>Click here to see the implementation.</p>
+      </section>
+    </main>
   </body>
 </html>
